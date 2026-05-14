@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Schedule Tracker</title>
+        <meta name="description" content="Um programa com o objetivo de facilitar a obtenção de informações relacionadas ao câmpus de jacareí voltado para professores. O site deve mostrar onde o fluxo estudantil está no momento atual e possibilitar anotações relacionadas ao ambiente escolar de professor para professor">
+
+    </head>
+    <body>
+
+        <header>
+            <h1><abbr title="Rastreador de Rotinas">Schedule Tracker</abbr></h1>
+            <p>Uma forma inovadora e dinâmica de manter-se informado no que ocorre no câmpus.<br><h3><strong>O que o professor pode fazer?</strong></h3><br>O professor tem o acesso a um mapa que identifica onde as turmas de cada curso estão atualmente, quais salas estão sendo ocupadas e podem adicionar recados a uma sala. Desta forma, os professores podem avisar uns aos outros sobre problemas que interferem na aula.</p>
+        </header>
+        <main>
+            <section>
+                <p><h3><strong>O que funcionários podem fazer?</strong></h3><br>Os funcionários possuem, também o mapeamento e acesso aos recados, tornando a solução de um problema de infraestrutura muito mais eficiente.</p>
+            </section>
+            <footer>
+                <h2>Vamos observar as salas?</h2><br>
+            <a href="b1.html">
+                <button>Bloco 1</button>
+            </a>
+            <h2>Planilha de problemas</h2>
+            <p>A planilha de problemas é uma planilha do google com o objetivo de armazenar todo e qualquer problema observado nas salas do câmpus de jacareí. Ela serve para que os funcionários tenham um acesso mais eficiente às informações influentes no ambiente de trabalho.</p>
+            <h4>O acesso à planilha é privado para colaboradores, para acessar, insira o código de entrada:</h4><br>
+            <input type="password" id="pw" placeholder="Insira o código aqui">
+            <button id="bp">Entrar</button>
+            <script>
+                let but=document.getElementById("bp")
+                but.addEventListener('click', function(){
+                     let inp=document.getElementById("pw").value
+                    if (inp=="casa"){
+                        window.location.href="https://docs.google.com/spreadsheets/d/1vnWxo19EIGY5pT7ULJafeU7MG0m-cAMf7BQkise1Clw/edit?usp=sharing"
+                    }
+                    })
+            </script>
+            <hr>
+            <p>É importante ressaltar o motivo da simplicidade do projeto. Nenhum de nossos integrantes possuia qualquer contato com as linguagens de programação HTML, JavaScript e CSS. Ideias como a planilha de problemas se originaram a partir da falta de tempo para o desenvolvimento de uma ferramenta de armazenamento de dados.Apesar de toda a correria e trabalho, o Hackathon 2026 proporcionou uma experiência incrível e nos incentivou a estudar dia e noite coisas que nem sabíamos ser capazes de fazer. Aqui registramos nossa gratidão ao evento e a todos que ajudaram a fazer a atividade ser o que é.</p>
+            <p>Integrantes do grupo: <strong>Lucas Tierno Konzen, Antônio Murilo Santos Cursino, Caio da Silva Oliveira, Sarah Anunciato Pereira e Jonathan dos Reis Silva</strong></p>
+        </footer>
+        </main>
+    </body>
+</html>
+        
