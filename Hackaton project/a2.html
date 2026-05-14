@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Schedule Tracker
+    </title>
+    <body>
+        <h1>Segundo andar</h1>
+    </body>
+    <footer>
+            
+            <h2>Para onde vamos?</h2><br>
+            <a href="l1.html">
+                <button>Lab 1</button>
+            </a>
+            <h5 id="sal1"></h5>
+            <hr>
+            <a href="l2.html">
+                <button>Lab 2</button>
+            </a>
+            <h5 id="sal2"></h5>
+            <hr>
+            <a href="s9.html">
+                <button>Sala 9</button>
+            </a>
+            <h5 id="sas9"></h5>
+        <script>
+        let h, t, m, hm;
+        t = new Date();
+        h = t.getHours();
+        m = t.getMinutes();
+        hm = ((h*60)+m);
+        if ((hm>=430) && (hm<=730)) {
+            document.getElementById("sal1").textContent="Ocupado"
+        }
+        else{
+            document.getElementById("sal1").textContent="livre"
+        }
+        if ((hm>=430) && (hm<=730)) {
+            document.getElementById("sal2").textContent="Ocupado"
+        }
+        else{
+            document.getElementById("sal2").textContent="livre"
+        }
+        if ((hm>=430) && (hm<730)) {
+            document.getElementById("sas9").textContent="Ocupado"
+        }
+        else{
+            document.getElementById("sas9").textContent="livre"
+        }
+    </script>
+    <hr>
+        <a href="b1.html">
+            <button>Voltar</button>
+        </a>
+        <hr>
+    </footer>
+
+
+</html>

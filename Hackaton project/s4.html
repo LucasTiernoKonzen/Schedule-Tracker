@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Tracker</title>
+</head>
+<body>
+    <h1>Sala 4</h1>
+    <h3>Status atual:</h3>
+    <h2 id="sa"></h2>
+    <script>
+            let h, t, m, hm
+            t = new Date()
+            h = t.getHours()
+            m = t.getMinutes()
+            hm = ((h*60)+m)
+            if ((hm>=430)&&(hm<=750)){
+                document.getElementById("sa").textContent="Ocupado"
+            }
+            else{
+                document.getElementById("sa").textContent="Livre"
+            }
+        </script>
+    <hr>
+    <a href="a3.html">
+        <button>Voltar</button>
+    </a>
+</body>
+</html>
