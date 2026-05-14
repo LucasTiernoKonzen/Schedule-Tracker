@@ -1,3 +1,11 @@
-# arquivo: nixpacks.toml
 [build]
 publish = "."
+
+[phases.setup]
+nixPkgs = ["nginx"]
+
+[phases.start]
+cmd = "nginx -g 'daemon off;' -p ."
+
+[[resources.ports]]
+port = "8080"
